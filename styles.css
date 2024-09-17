@@ -1,0 +1,10 @@
+path {
+    cursor: pointer; /* 設置鼠標懸停時變成手形，表示可點擊 */
+    transition: fill 0.3s ease;
+    stroke: hwb(0 5% 1%); /* 設置邊框顏色 */
+    stroke-width: 2; /* 設置邊框粗細為 2 像素 */
+}
+
+path:hover {
+    fill: #ffcc00; /* 當鼠標懸停時，改變縣市區塊的顏色 */
+}
