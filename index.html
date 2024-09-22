@@ -78,5 +78,32 @@
     </script>
     <!-- 引入 app.js 文件 -->
     <script src="app.js"></script>
+
+
+    <!-- 1130922開始導入firebase -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAWgs9VWzEexYy4WBt-5ufdoZv69F61kJc",
+          authDomain: "kit-awesome-project.firebaseapp.com",
+          projectId: "kit-awesome-project",
+          storageBucket: "kit-awesome-project.appspot.com",
+          messagingSenderId: "642127851593",
+          appId: "1:642127851593:web:b1376e6c59e3f64c49cf98",
+          measurementId: "G-ZBF843KQ9W"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+      <!-- 1130922導入firebase結束 -->
 </body>
 </html>
